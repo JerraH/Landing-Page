@@ -435,15 +435,26 @@ div {
 }
 
 .navbar {
-  height: 140px;
   width: 100vw;
+  background:white;
+  position:fixed;
+}
+
+#navlogo {
+  position:absolute;
+  margin-left: 20%;
+  height:50px;
+  padding:10;
+  display:inline-block;
 }
 
 .navlinks {
-
+  padding:30px;
+  margin-left:50%;
 }
 
 .link {
+  display:inline-block;
 }
 
 .banner {
