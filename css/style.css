@@ -435,35 +435,62 @@ div {
 }
 
 .navbar {
-  width: 100vw;
+  width: 100%;
   background:white;
   position:fixed;
-  height:70px;
+  height:4.375em;
+  z-index:11;
+  border-top:none;
 }
+
+
 
 #navlogo {
   margin-left: 20%;
-  height:2.47em;
+  height:2.46em;
   width:auto;
-  padding:13px 10px;
+  padding-top:.9em;
+  padding-left: .625em;
   position:absolute;
 }
 
 #navlinks {
-  padding:30px;
   position:absolute;
-  margin-left:50%;
-  margin-top:0;
-  margin-bottom:0;
-  width: 500px;
+  margin-top:1.55em;
+  margin-left:59em;
+  width: 510px;
 }
 
 .link {
   display:inline-block;
+  margin-left:1.5em;
+  font-family: 'Roboto', sans-serif;
+  font-size:1.04em;
+  font-weight:400;
+  color:gray;
+}
+
+.link > a:active {
+  color: black;
+}
+
+.link > a {
+  text-decoration: none;
+}
+
+#meet-karma {
+  font-weight: 500;
+  margin-left:1.5em;
+  color:black;
 }
 
 .banner {
   position:absolute;
+  display:inline;
+  width:100%;
+  height:41.5em;
+  text-align:center;
+  margin-top:4.375em;
 }
 
 h1 {
@@ -472,4 +499,9 @@ h1 {
 
 h3 {
 
+}
+
+.button {
+  width:8em;
+  height:4em;
 }
