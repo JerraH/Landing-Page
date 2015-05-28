@@ -444,8 +444,10 @@ div {
   height:4.375em;
   z-index:11;
   border-top:none;
+  top:0;
+  margin:0;
+  padding:0;
 }
-
 
 
 #navlogo {
@@ -488,9 +490,9 @@ div {
 }
 
 .banner {
-  position:absolute;
+  position:relative;
   display:block;
-  height:75%;
+  height:75vh;
   width:100%;
   margin-top:70px;
   background-image: url(http://thinkful-ed.github.io/karma-clone/img/first-background.jpg);
@@ -509,13 +511,26 @@ div {
 }
 
 #introducing {
-  top:50%;
   transform: translateY(-50%);
-  position:relative;
+  width:100%;
+  height:auto;
+  position:absolute;
+  margin-top:50%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 h1, h3 {
   font-weight:300;
+  margin:0px;
+}
+
+h1 {
+  font-size:3em;
+}
+
+h2 {
+  font-size:1.5em;
 }
 
 .button {
@@ -528,9 +543,10 @@ h1, h3 {
 
 .features {
   height:50%;
-  position:absolute;
   display:block;
   width:100%;
   text-align:center;
   margin-top:0;
+  top:85%;
+  position:relative;
 }
