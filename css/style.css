@@ -10,6 +10,7 @@ html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -428,6 +429,8 @@ th {
 
 body {
   background-color: LightGray;
+   font-family: 'Roboto', sans-serif;
+   font-weight:300;
 }
 
 div {
@@ -446,8 +449,7 @@ div {
 
 
 #navlogo {
-  margin-left: 20%;
-  height:2.46em;
+  height:2.45em;
   width:auto;
   padding-top:.9em;
   padding-left: .625em;
@@ -455,53 +457,80 @@ div {
 }
 
 #navlinks {
-  position:absolute;
   margin-top:1.55em;
-  margin-left:59em;
+  margin-right:0;
   width: 510px;
+  float:right;
 }
 
 .link {
   display:inline-block;
   margin-left:1.5em;
-  font-family: 'Roboto', sans-serif;
   font-size:1.04em;
   font-weight:400;
-  color:gray;
+  color:#707070;
 }
 
-.link > a:active {
-  color: black;
+.link > a:hover, 
+#meet-karma, 
+.link>a:visited:hover, 
+#meet-karma:visited:hover {
+  color: #000000;
+  font-weight:500;
 }
 
 .link > a {
   text-decoration: none;
 }
 
-#meet-karma {
-  font-weight: 500;
-  margin-left:1.5em;
-  color:black;
+.link > a:visited {
+  color: #707070;
 }
 
 .banner {
   position:absolute;
-  display:inline;
+  display:block;
+  height:75%;
   width:100%;
-  height:41.5em;
+  margin-top:70px;
+  background-image: url(http://thinkful-ed.github.io/karma-clone/img/first-background.jpg);
+  background-position:bottom;
+  background-size: cover;
+  color:white;
   text-align:center;
-  margin-top:4.375em;
 }
 
-h1 {
-
+.content {
+  margin:auto;
+  width:60%;
+  max-width:1150px;
+  border:none;
+  position:relative;
 }
 
-h3 {
+#introducing {
+  top:50%;
+  transform: translateY(-50%);
+  position:relative;
+}
 
+h1, h3 {
+  font-weight:300;
 }
 
 .button {
-  width:8em;
-  height:4em;
+  width:155px;
+  height:50px;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color:#f15a29;
+}
+
+.features {
+  height:50%;
+  position:absolute;
+  display:block;
+  width:100%;
+  text-align:center;
+  margin-top:0;
 }
