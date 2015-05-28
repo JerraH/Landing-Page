@@ -441,9 +441,9 @@ div {
   width: 100%;
   background:white;
   position:fixed;
-  height:4.375em;
+  height:4.406rem;
   z-index:11;
-  border-top:none;
+  border:none;
   top:0;
   margin:0;
   padding:0;
@@ -451,16 +451,17 @@ div {
 
 
 #navlogo {
-  height:2.45em;
+  height:2.45rem;
   width:auto;
-  padding-top:.9em;
-  padding-left: .625em;
+  padding-top:.9rem;
+  padding-left: .625rem;
   position:absolute;
+  margin-left:4px;
 }
 
 #navlinks {
   margin-top:1.55em;
-  margin-right:0;
+  margin-right:.7rem;
   width: 510px;
   float:right;
 }
@@ -475,8 +476,8 @@ div {
 
 .link > a:hover, 
 #meet-karma, 
-.link>a:visited:hover, 
-#meet-karma:visited:hover {
+.link > a:visited:hover
+#meet-karma:visited {
   color: #000000;
   font-weight:500;
 }
@@ -492,14 +493,15 @@ div {
 .banner {
   position:relative;
   display:block;
-  height:75vh;
+  height:73.78vh;
   width:100%;
   margin-top:70px;
   background-image: url(http://thinkful-ed.github.io/karma-clone/img/first-background.jpg);
-  background-position:bottom;
+  background-position: center bottom;
   background-size: cover;
   color:white;
   text-align:center;
+  border: none;
 }
 
 .content {
@@ -511,34 +513,52 @@ div {
 }
 
 #introducing {
-  transform: translateY(-50%);
+  transform: translateY(-49%);
   width:100%;
   height:auto;
   position:absolute;
-  margin-top:50%;
+  padding-top:50%;
   margin-left:auto;
   margin-right:auto;
+  border:none;
 }
 
 h1, h3 {
   font-weight:300;
-  margin:0px;
+  margin: 0;
 }
 
 h1 {
-  font-size:3em;
+  font-size:3.125rem;
+  margin-bottom:12px;
 }
 
-h2 {
-  font-size:1.5em;
+h3 {
+  font-size:1.563rem;
+  margin-bottom:23px;
 }
 
 .button {
-  width:155px;
-  height:50px;
-  border-radius: 10px;
+  width:9.6875rem;
+  height:3.33rem;
+  border-radius: 5px;
   margin: 0 auto;
   background-color:#f15a29;
+  font-weight:500;
+  float:center;
+  font-size:1.1rem;
+  position:relative;
+  border: none;
+  letter-spacing:.15px;
+}
+
+.button > p {
+  width:100%;
+  height:100%;
+  float:center;
+  position:absolute;
+  margin:0;
+  padding-top:1rem;
 }
 
 .features {
@@ -549,4 +569,40 @@ h2 {
   margin-top:0;
   top:85%;
   position:relative;
+}
+
+.features h1 {
+  font-weight:300;
+  font-size:2.75rem;
+  width:100;
+  margin:0;
+  padding:0;
+  margin-right:.3rem;
+  margin-bottom:3.125rem;
+}
+
+.features .content {
+  margin-top: 7.5rem;
+  padding:0;
+}
+
+.features li {
+ width:33%;
+ display:inline-block;
+ margin:0;
+ padding:0;
+}
+
+.graphics {
+  padding: 0;
+}
+
+.description {
+  font-size:1.563rem;
+  font-weight:400;
+  margin: 2.5rem 0px 1.875rem;
+}
+
+.icon {
+  height:127px;
 }
