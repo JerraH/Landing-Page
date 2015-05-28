@@ -506,18 +506,18 @@ div {
 
 .content {
   margin:auto;
-  width:60%;
+  width:100%;
   max-width:1150px;
   border:none;
   position:relative;
 }
 
 #introducing {
-  transform: translateY(-49%);
+  transform: translateY(-25vh);
   width:100%;
   height:auto;
   position:absolute;
-  padding-top:50%;
+  padding-top:50vh;
   margin-left:auto;
   margin-right:auto;
   border:none;
