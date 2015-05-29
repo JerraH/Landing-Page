@@ -476,7 +476,7 @@ div {
 
 .link > a:hover, 
 #meet-karma, 
-.link > a:visited:hover
+.link > a:visited:hover,
 #meet-karma:visited {
   color: #000000;
   font-weight:500;
@@ -493,7 +493,7 @@ div {
 .banner {
   position:relative;
   display:block;
-  height:73.78vh;
+  height:69vh;
   width:100%;
   margin-top:70px;
   background-image: url(http://thinkful-ed.github.io/karma-clone/img/first-background.jpg);
@@ -512,15 +512,19 @@ div {
   position:relative;
 }
 
+#bannercontent {
+  height:100%;
+}
+
 #introducing {
-  transform: translateY(-25vh);
   width:100%;
-  height:auto;
+  height:180px;
+  display:block;
   position:absolute;
-  padding-top:50vh;
-  margin-left:auto;
-  margin-right:auto;
+  bottom:50%;
+  transform: translateY(25%);
   border:none;
+  z-index:10;
 }
 
 h1, h3 {
