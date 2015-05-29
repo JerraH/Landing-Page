@@ -667,15 +667,15 @@ footer > p {
   padding:0;
 }
 
-.twitter {
+.twitter > a{
   color:#55acee;
 }
 
-.facebook {
+.facebook > a{
   color:#4c66a4;
 }
 
-.instagram {
+.instagram > a{
   color:#3f729b;
 }
 
